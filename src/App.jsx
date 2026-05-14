@@ -359,7 +359,7 @@ export default function App() {
               <div className="hero-card-title">
                 <div>
                   <span>物流路線整合</span>
-                  <strong>中國・台灣・東南亞</strong>
+                  <strong>中國・台灣・東南亞・全球</strong>
                 </div>
                 <Globe2 size={38} />
               </div>
