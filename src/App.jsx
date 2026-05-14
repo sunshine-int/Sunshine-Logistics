@@ -616,6 +616,154 @@ export default function App() {
           }
         }
 
+
+        /* 統計區塊最終修正：電腦版強制置中 */
+        .stats {
+          width: 100% !important;
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          padding: 34px 24px !important;
+          background: linear-gradient(90deg, #002d62, #063d7b) !important;
+        }
+
+        .stats > .statsGrid,
+        .statsGrid {
+          width: min(980px, 100%) !important;
+          max-width: 980px !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          display: grid !important;
+          grid-template-columns: repeat(4, 1fr) !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+
+        .stats .stat,
+        .stat {
+          min-width: 0 !important;
+          width: 100% !important;
+          text-align: center !important;
+          padding: 0 28px !important;
+        }
+
+        @media (min-width: 769px) {
+          .statsGrid {
+            transform: translateX(0) !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .stats {
+            padding: 24px 14px !important;
+          }
+
+          .stats > .statsGrid,
+          .statsGrid {
+            width: 100% !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 18px 0 !important;
+          }
+
+          .stats .stat,
+          .stat {
+            padding: 0 12px !important;
+          }
+        }
+
+
+        /* 關於我們區塊放大與對齊 */
+        .about,
+        .aboutSection,
+        .aboutInner {
+          align-items: flex-start !important;
+        }
+
+        .about-visual,
+        .aboutImg {
+          width: 100% !important;
+          min-height: 420px !important;
+          height: 420px !important;
+          border-radius: 28px !important;
+        }
+
+        .about-visual img,
+        .aboutImg img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+        }
+
+        .about-text,
+        .aboutText {
+          padding-top: 6px !important;
+        }
+
+        .about-text h2,
+        .aboutText h2 {
+          font-size: 48px !important;
+          margin-top: 0 !important;
+        }
+
+        .about-text p,
+        .aboutText p {
+          font-size: 18px !important;
+          line-height: 2 !important;
+        }
+
+        @media (max-width: 768px) {
+          .about-visual,
+          .aboutImg {
+            min-height: 280px !important;
+            height: 280px !important;
+          }
+
+          .about-text h2,
+          .aboutText h2 {
+            font-size: 34px !important;
+          }
+
+          .about-text p,
+          .aboutText p {
+            font-size: 15px !important;
+            line-height: 1.9 !important;
+          }
+        }
+
+
+        .btn-line{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          gap:10px;
+          width:100%;
+          max-width:320px;
+          min-height:56px;
+          margin:14px auto 0;
+          border-radius:18px;
+          background:#16a34a;
+          color:#fff;
+          font-size:20px;
+          font-weight:900;
+          text-decoration:none;
+          box-shadow:0 10px 25px rgba(22,163,74,.28);
+          transition:.25s;
+        }
+
+        .btn-line:hover{
+          transform:translateY(-2px);
+          background:#15803d;
+        }
+
+        @media (max-width:768px){
+          .btn-line{
+            min-height:54px;
+            font-size:18px;
+            border-radius:16px;
+            margin-top:14px;
+          }
+        }
+
       `}</style>
 
       <section id="top" className="hero">
