@@ -185,9 +185,9 @@ export default function App() {
 
         .nav {
           display: flex;
-          gap: 24px;
+          gap: 40px;
           color: #475569;
-          font-size: 22px;
+          font-size: 36px;
           font-weight:900;
         }
 
