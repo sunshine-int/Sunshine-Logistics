@@ -1140,8 +1140,8 @@ export default function App() {
 
           .brand .logo,
           .logo {
-            width: 58px !important;
-            height: 58px !important;
+            width: 60px !important;
+            height: 60px !important;
           }
 
           .brand strong {
@@ -1251,7 +1251,7 @@ export default function App() {
           }
 
           .heroText {
-            transform: translateY(-26px) !important;
+            transform: translateY(-40px) !important;
             padding: 0 18px 96px !important;
             text-align: center !important;
             max-width: 100% !important;
