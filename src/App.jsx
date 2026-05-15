@@ -1088,7 +1088,7 @@ export default function App() {
           .heroText {
             padding-top: 8px !important;
             padding-bottom: 24px !important;
-            transform: translateY(-63px) !important;
+            transform: translateY(-58px) !important;
           }
 
           .actions {
@@ -1113,7 +1113,7 @@ export default function App() {
 
           .heroText {
             transform: translateY(-68px) !important;
-            padding-bottom: 150px !important;
+            padding-bottom: 12px !important;
           }
 
           .heroText h1 {
@@ -1140,8 +1140,8 @@ export default function App() {
 
           .brand .logo,
           .logo {
-            width: 60px !important;
-            height: 60px !important;
+            width: 58px !important;
+            height: 58px !important;
           }
 
           .brand strong {
@@ -1232,26 +1232,26 @@ export default function App() {
 
           .brand .logo,
           .logo {
-            width: 90px !important;
-            height: 90px !important;
+            width: 76px !important;
+            height: 76px !important;
             border-radius: 18px !important;
           }
 
           .brand strong {
-            font-size: 42px !important;
+            font-size: 26px !important;
             line-height: 1.2 !important;
             letter-spacing: 1px !important;
           }
 
           .brand span {
             display: block !important;
-            font-size: 20px !important;
+            font-size: 13px !important;
             letter-spacing: 2.4px !important;
             margin-top: 4px !important;
           }
 
           .heroText {
-            transform: translateY(-40px) !important;
+            transform: translateY(-26px) !important;
             padding: 0 18px 96px !important;
             text-align: center !important;
             max-width: 100% !important;
@@ -1489,8 +1489,9 @@ export default function App() {
           }
 
           .navLinks a {
-            font-size: 40px !important;
-            font-weight: 800 !important;
+            font-size: 22px !important;
+            font-weight: 900 !important;
+            letter-spacing: .5px !important;
           }
         }
 
