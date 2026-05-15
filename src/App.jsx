@@ -185,9 +185,9 @@ export default function App() {
 
         .nav {
           display: flex;
-          gap: 40px;
+          gap: 50px;
           color: #475569;
-          font-size: 36px;
+          font-size: 50px;
           font-weight:900;
         }
 
@@ -233,7 +233,7 @@ export default function App() {
           position: relative;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 92px 20px 92px;
+          padding: 92px 20px 140px;
           display: grid;
           grid-template-columns: 1.08fr .92fr;
           gap: 48px;
