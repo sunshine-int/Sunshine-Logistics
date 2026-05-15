@@ -262,7 +262,7 @@ export default function App() {
 
         .hero h1 span {
           display: block;
-          margin-top: 40px;
+          margin-top: 5px;
           color: #dbeafe;
           font-size: clamp(28px, 4vw, 46px);
         }
