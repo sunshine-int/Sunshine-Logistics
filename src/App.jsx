@@ -1088,7 +1088,7 @@ export default function App() {
           .heroText {
             padding-top: 8px !important;
             padding-bottom: 24px !important;
-            transform: translateY(-58px) !important;
+            transform: translateY(-70px) !important;
           }
 
           .actions {
@@ -1232,20 +1232,20 @@ export default function App() {
 
           .brand .logo,
           .logo {
-            width: 76px !important;
-            height: 76px !important;
+            width: 90px !important;
+            height: 90px !important;
             border-radius: 18px !important;
           }
 
           .brand strong {
-            font-size: 26px !important;
+            font-size: 42px !important;
             line-height: 1.2 !important;
             letter-spacing: 1px !important;
           }
 
           .brand span {
             display: block !important;
-            font-size: 13px !important;
+            font-size: 20px !important;
             letter-spacing: 2.4px !important;
             margin-top: 4px !important;
           }
@@ -1489,7 +1489,7 @@ export default function App() {
           }
 
           .navLinks a {
-            font-size: 17px !important;
+            font-size: 25px !important;
             font-weight: 800 !important;
           }
         }
