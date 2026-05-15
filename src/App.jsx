@@ -790,8 +790,8 @@ export default function App() {
           }
 
           .hero-inner {
-            padding: 12px 20px 96px;
-            gap: 26px;
+            padding: 0px 10px 80px;
+            gap: 18px;
           }
 
           .tag {
@@ -823,8 +823,8 @@ export default function App() {
 
           .hero-actions {
             flex-direction: column;
-            margin-top: 26px;
-            margin-bottom: 92px;
+            margin-top: 15px;
+            margin-bottom: 80px;
           }
 
           .btn-primary,
