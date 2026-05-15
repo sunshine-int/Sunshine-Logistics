@@ -823,7 +823,7 @@ export default function App() {
 
           .hero-actions {
             flex-direction: column;
-            margin-top: 15px;
+            margin-top: 0px;
             margin-bottom: 80px;
           }
 
@@ -898,9 +898,9 @@ export default function App() {
               <h1>
                 尚順國際運通
                 <span>
-                  <span className="title-line">全球物流</span>
-                  <span className="title-line">專業運輸</span>
-                  <span className="title-line">值得信賴</span>
+                  全球物流<br />
+                  專業運輸<br />
+                  值得信賴
                 </span>
               </h1>
 
