@@ -128,7 +128,7 @@ export default function App() {
 
           .hero-inner {
             display: block;
-            padding: 58px 16px 64px;
+            padding: 10px 20px 92px;
           }
 
           .tag {
