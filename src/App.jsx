@@ -1113,7 +1113,7 @@ export default function App() {
 
           .heroText {
             transform: translateY(-68px) !important;
-            padding-bottom: 12px !important;
+            padding-bottom: 150px !important;
           }
 
           .heroText h1 {
@@ -1489,7 +1489,7 @@ export default function App() {
           }
 
           .navLinks a {
-            font-size: 25px !important;
+            font-size: 40px !important;
             font-weight: 800 !important;
           }
         }
