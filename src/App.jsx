@@ -1088,7 +1088,7 @@ export default function App() {
           .heroText {
             padding-top: 8px !important;
             padding-bottom: 24px !important;
-            transform: translateY(-70px) !important;
+            transform: translateY(-63px) !important;
           }
 
           .actions {
