@@ -185,10 +185,11 @@ export default function App() {
 
         .nav {
           display: flex;
-          gap: 50px;
+          gap: 34px;
           color: #475569;
-          font-size: 50px;
+          font-size:28px;
           font-weight:900;
+          text-shadow: 0 2px 10px rgba(0,0,0,0.55);
         }
 
         .nav a:hover {
