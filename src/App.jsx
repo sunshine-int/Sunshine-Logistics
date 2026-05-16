@@ -249,7 +249,7 @@ function HomePage() {
           <div>
             <div className="tag">
               <ShieldCheck size={18} />
-              國際物流｜海運｜空運｜小三通｜報關清關
+              國際物流｜海運｜空運｜小三通｜報關清關｜倉儲集貨
             </div>
             <h1>
               尚順國際運通
