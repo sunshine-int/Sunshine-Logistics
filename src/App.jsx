@@ -182,7 +182,7 @@ function Header() {
     <header className="header">
       <div className="header-inner">
         <LinkButton to="/" className="brand">
-          <img className="logo" src={companyInfo.logo} alt="尚順國際運通 Logo" />
+          <img className="logo" src={companyInfo.logo} alt="尚順國際運通有限公司 Logo" />
           <div>
             <div className="brand-title">{companyInfo.companyName}</div>
             <div className="brand-subtitle">SUNSHINE INTERNATIONAL LOGISTICS</div>
