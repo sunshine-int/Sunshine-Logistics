@@ -87,7 +87,8 @@ export default function App() {
                 className="bg-[#102544]/90 rounded-3xl p-8 border border-blue-900 shadow-2xl backdrop-blur"
               >
                 <div className="text-cyan-300 mb-5">{item.icon}</div>
-                <h4 className="text-2xl font-bold mb-4 text-cyan-300">{item.title}</h4>
+                <h4 className="text-2xl font-bold mb-4 text-white">
+  {item.title}</h4>
                 <p className="text-blue-200 leading-relaxed">{item.text}</p>
               </motion.div>
             ))}
