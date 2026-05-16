@@ -712,7 +712,7 @@ function App() {
 function Styles() {
   return (
     <style>{`
-      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;color:#0f172a;background:#f4f7fb}a{text-decoration:none;color:inherit}.site{min-height:100vh;overflow-x:hidden}
+      *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;color:#082f5b;background:#f4f7fb}a{text-decoration:none;color:inherit}.site{min-height:100vh;overflow-x:hidden}
       .header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid #e5e7eb}.header-inner{max-width:1280px;margin:0 auto;padding:12px 20px;display:flex;align-items  :center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}.logo{width:54px;height:54px;border-radius:18px;background:#fff;object-fit:contain;box-shadow:0 10px 28px rgba(15,23,42,.12)}.brand-title{font-size:34px;font-weight:900;letter-spacing:1px}.brand-subtitle{margin-top:3px;color:#64748b;font-size:11px;letter-spacing:2px}.nav{
   display:flex;
   align-items:center;
