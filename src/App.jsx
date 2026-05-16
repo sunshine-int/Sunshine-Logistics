@@ -737,7 +737,7 @@ function Styles() {
       .hero-card{border-radius:32px;padding:28px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);box-shadow:0 35px 90px rgba(0,0,0,.32);backdrop-filter:blur(16px)}.hero-card-title{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}.hero-card-title strong{display:block;font-size:28px}.hero-card-title span{color:#bfdbfe;font-weight:700}.
       .route-box{
   position:relative;
-  height:220px;
+  height:320px;
   overflow:hidden;
   border-radius:24px;
   border:1px solid rgba(255,255,255,.16);
@@ -749,7 +749,28 @@ function Styles() {
   background-size:cover;
   background-position:center;
 }
-.route-line{position:absolute;left:18%;top:45%;width:62%;height:2px;border-top:2px dashed #93c5fd;transform:rotate(12deg);animation:routeGlow 2.8s infinite}.route-line.two{top:56%;width:55%;transform:rotate(-10deg)}.route-dot{position:absolute;width:44px;height:44px;border-radius:50%;background:#fff;color:#0f172a;display:grid;place-items:center;font-weight:900;font-size:12px;box-shadow:0 0 28px rgba(147,197,253,.7)}.dot-cn{left:14%;top:30%}.dot-tw{left:58%;top:42%}.dot-sea{right:10%;bottom:14%}@keyframes routeGlow{50%{opacity:.45;filter:drop-shadow(0 0 12px #93c5fd)}}
+.route-line{position:absolute;left:18%;top:45%;width:62%;height:2px;border-top:2px dashed #93c5fd;transform:rotate(12deg);animation:routeGlow 2.8s infinite}.route-line.two{top:56%;width:55%;transform:rotate(-10deg)}.route-dot{position:absolute;width:44px;height:44px;border-radius:50%;background:#fff;color:#0f172a;display:grid;place-items:center;font-weight:900;font-size:12px;box-shadow:0 0 28px rgba(147,197,253,.7)}
+..route-line{
+  position:absolute;
+
+  left:18%;
+  top:42%;
+
+  width:58%;
+
+  height:2px;
+
+  border-top:2px dashed #93c5fd;
+
+  transform:rotate(10deg);
+}
+
+.route-line.two{
+  top:58%;
+  width:50%;
+  transform:rotate(-8deg);
+}
+@keyframes routeGlow{50%{opacity:.45;filter:drop-shadow(0 0 12px #93c5fd)}}
       .page-hero{
   position:relative;
   overflow:hidden;
