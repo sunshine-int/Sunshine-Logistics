@@ -718,7 +718,7 @@ function Styles() {
   align-items:center;
   gap:18px;
 
-  font-size:26px;
+  font-size:18px;
   font-weight:900;
   line-height:1.2;
 
