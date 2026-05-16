@@ -745,7 +745,7 @@ function Styles() {
       rgba(3,20,45,.92),
       rgba(10,62,121,.82)
     ),
-    url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=80");
+    url("/global-logistics.jpg.png");
 
   background-size:cover;
   background-position:center;
