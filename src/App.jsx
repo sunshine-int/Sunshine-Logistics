@@ -771,7 +771,15 @@ function Styles() {
 
   opacity:.35;
 }
-.page-hero-inner{max-width:1200px;margin:0 auto;padding:74px 20px}.page-hero h1{margin:0;font-size:clamp(38px,5vw,62px);letter-spacing:-1.5px}.page-hero p{max-width:760px;color:#dbeafe;line-height:2;font-size:18px}.section{max-width:1200px;margin:0 auto;padding:84px 20px}.section-title{max-width:780px;margin-bottom:38px}.section-label{color:#2563eb;font-size:13px;letter-spacing:3px;font-weight:900;margin-bottom:12px}.section h2,.contact-box h2,.form-title h2,.cta-box h2{margin:0;font-size:clamp(30px,4vw,44px);letter-spacing:-1px}.section-title p,.form-title p{margin:15px 0 0;color:#64748b;line-height:1.9;font-size:17px}
+..page-hero-inner{
+  position:relative;
+  z-index:2;
+
+  max-width:1200px;
+  margin:0 auto;
+  padding:74px 20px;
+}
+.page-hero h1{margin:0;font-size:clamp(38px,5vw,62px);letter-spacing:-1.5px}.page-hero p{max-width:760px;color:#dbeafe;line-height:2;font-size:18px}.section{max-width:1200px;margin:0 auto;padding:84px 20px}.section-title{max-width:780px;margin-bottom:38px}.section-label{color:#2563eb;font-size:13px;letter-spacing:3px;font-weight:900;margin-bottom:12px}.section h2,.contact-box h2,.form-title h2,.cta-box h2{margin:0;font-size:clamp(30px,4vw,44px);letter-spacing:-1px}.section-title p,.form-title p{margin:15px 0 0;color:#64748b;line-height:1.9;font-size:17px}
       .quick-stats{max-width:1200px;margin:-64px auto 0;position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0 20px}.stat-card{background:#fff;border:1px solid #e5e7eb;border-radius:24px;padding:22px;box-shadow:0 18px 50px rgba(15,23,42,.12)}.stat-card strong{display:block;font-size:28px}.stat-card span{color:#64748b;font-weight:700}
       .service-grid,.advantage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card,.advantage-card,.faq-card{display:block;background:#fff;border:1px solid #e5e7eb;border-radius:28px;padding:28px;box-shadow:0 16px 42px rgba(15,23,42,.06);transition:.25s}.service-card:hover,.advantage-card:hover{transform:translateY(-6px);box-shadow:0 25px 55px rgba(15,23,42,.1)}.service-icon,.advantage-icon{width:52px;height:52px;border-radius:18px;background:#eff6ff;color:#2563eb;display:grid;place-items:center;margin-bottom:18px}.service-card h3,.advantage-card h3{margin:0 0 10px;font-size:21px}.service-card p,.advantage-card p{margin:0;color:#64748b;line-height:1.8}
       .process-section{background:#0f172a;color:white}.process-section .section-title p{color:#cbd5e1}.process-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.process-item{border-radius:24px;padding:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.1)}.process-no{width:38px;height:38px;border-radius:50%;background:white;color:#0f172a;display:grid;place-items:center;font-weight:900;margin-bottom:14px}.process-item svg{color:#93c5fd;margin-bottom:10px}.process-item strong{display:block;margin-bottom:8px}.process-item p{margin:0;color:#cbd5e1;font-size:14px;line-height:1.7}
