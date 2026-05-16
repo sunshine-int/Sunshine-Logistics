@@ -321,7 +321,7 @@ export default function App() {
 
             <div>
               <SectionBadge>尚順特色</SectionBadge>
-              <h2 className="text-4xl font-black leading-tight text-cyan-200 md:text-6xl">
+              <h2 className="bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent !text-transparent text-4xl font-black leading-tight md:text-6xl"">
                 我們的核心不是低價，
                 <br />
                 而是穩定、安全、清楚
