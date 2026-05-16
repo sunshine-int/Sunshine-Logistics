@@ -40,7 +40,7 @@ const companyInfo = {
     "https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform?embedded=true",
   logo: "/logo.png",
   lineQr: "/line-qr.png",
-  aboutImage: "/about-bg.jpg",
+  aboutImage: "/about-logistics.png",
 };
 
 const navItems = [
