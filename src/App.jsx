@@ -283,7 +283,7 @@ export default function App() {
               <div className="mb-5 flex items-center justify-between">
                 <div>
                   <p className="text-lg font-black text-cyan-200">物流路線整合</p>
-                  <h2 className="mt-2 text-3xl font-black text-white md:text-4xl">
+                  <h2 className="mt-2 text-3xl font-white text-white md:text-4xl">
                     中國・台灣・東南亞・全球
                   </h2>
                 </div>
@@ -321,7 +321,7 @@ export default function App() {
 
             <div>
               <SectionBadge>尚順特色</SectionBadge>
-              <h2 className="text-4xl font-black leading-tight text-blue-100 md:text-6xl">
+              <h2 className="text-4xl font-white leading-tight text-blue-100 md:text-6xl">
                 我們的核心不是低價，
                 <br />
                 而是穩定、安全、清楚
