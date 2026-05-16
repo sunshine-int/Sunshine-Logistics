@@ -321,11 +321,11 @@ export default function App() {
 
             <div>
               <SectionBadge>尚順特色</SectionBadge>
-              <h2 className="bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent !text-transparent text-4xl font-black leading-tight md:text-6xl"">
-                我們的核心不是低價，
-                <br />
-                而是穩定、安全、清楚
-              </h2>
+              <h2 className="text-4xl md:text-6xl font-black leading-tight bg-gradient-to-r from-cyan-100 via-white to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(59,130,246,0.35)]">
+  我們的核心不是低價，
+  <br />
+  而是穩定、安全、清楚
+</h2>
               <p className="mt-7 text-lg leading-loose text-blue-100">
                 物流不只是把貨送到目的地，更重要的是事前確認、風險控管與過程追蹤。
                 尚順國際運通重視每一票貨件的資料完整性與操作細節，
