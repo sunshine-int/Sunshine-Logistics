@@ -260,7 +260,7 @@ function HomePage() {
               </span>
             </h1>
             <p>
-              提供中國與東南亞進出口、小三通、海運、海快、空運、報關清關、倉儲集貨與後段派送服務。
+              提供中國、東南亞及全球進出口、小三通、海運、海快、空運、報關清關、倉儲集貨與後段派送服務。
               依照貨件特性、時效與預算，協助客戶規劃穩定且安全的物流方案。
             </p>
             <div className="hero-actions">
@@ -277,7 +277,7 @@ function HomePage() {
             <div className="hero-card-title">
               <div>
                 <span>物流路線整合</span>
-                <strong>中國・台灣・東南亞</strong>
+                <strong>中國⮂台灣⮂東南亞(全球)</strong>
               </div>
               <Globe2 size={38} />
             </div>
