@@ -254,13 +254,26 @@ function HomePage() {
               <div><span>物流路線整合</span><strong>中國・台灣・東南亞</strong></div>
               <Globe2 size={38} />
             </div>
-            <div className="route-box">
-              <div className="route-line" />
-              <div className="route-line two" />
-              <div className="route-dot dot-cn">CN</div>
-              <div className="route-dot dot-tw">TW</div>
-              <div className="route-dot dot-sea">SEA</div>
-            </div>
+         .route-box{
+  position:relative;
+
+  height:420px;
+
+  overflow:hidden;
+
+  border-radius:28px;
+
+  border:1px solid rgba(255,255,255,.16);
+
+  background:#0f172a;
+}
+
+.route-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
           </div>
         </div>
       </section>
@@ -749,28 +762,6 @@ function Styles() {
   background-size:cover;
   background-position:center;
 }
-.route-line{position:absolute;left:18%;top:45%;width:62%;height:2px;border-top:2px dashed #93c5fd;transform:rotate(12deg);animation:routeGlow 2.8s infinite}.route-line.two{top:56%;width:55%;transform:rotate(-10deg)}.route-dot{position:absolute;width:44px;height:44px;border-radius:50%;background:#fff;color:#0f172a;display:grid;place-items:center;font-weight:900;font-size:12px;box-shadow:0 0 28px rgba(147,197,253,.7)}
-..route-line{
-  position:absolute;
-
-  left:18%;
-  top:42%;
-
-  width:58%;
-
-  height:2px;
-
-  border-top:2px dashed #93c5fd;
-
-  transform:rotate(10deg);
-}
-
-.route-line.two{
-  top:58%;
-  width:50%;
-  transform:rotate(-8deg);
-}
-@keyframes routeGlow{50%{opacity:.45;filter:drop-shadow(0 0 12px #93c5fd)}}
       .page-hero{
   position:relative;
   overflow:hidden;
