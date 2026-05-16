@@ -383,7 +383,7 @@ export default function App() {
           <div className="relative z-10 mx-auto max-w-7xl">
             <div className="mb-14 max-w-5xl">
               <SectionBadge>物流流程</SectionBadge>
-              <h2 className="text-4xl font-black leading-tight text-cyan-200 md:text-6xl">
+              <h2 className="text-4xl font-black leading-tight text-blue-100 md:text-6xl">
                 流程透明，
                 <br />
                 進度清楚掌握
