@@ -66,13 +66,26 @@ export default function App() {
 
           <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div>
-              <h2 className="text-4xl font-black leading-tight md:text-6xl">
-                <span className="bg-gradient-to-r from-cyan-100 via-white to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(59,130,246,0.35)]">
-                  專業物流流程，
-                  <br />
-                  每一步都清楚掌握
-                </span>
-              </h2>
+            <h2
+  className="
+    text-4xl
+    md:text-6xl
+    font-black
+    leading-tight
+    bg-gradient-to-r
+    from-white
+    via-cyan-200
+    to-blue-400
+    inline-block
+    bg-clip-text
+    text-transparent
+    !text-transparent
+  "
+>
+  專業物流流程，
+  <br />
+  每一步都清楚掌握
+</h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-cyan-100/75 md:text-lg">
                 從需求確認、評估報價、集貨入倉到報關清關與派送完成，協助客戶降低溝通成本與運輸風險。
               </p>
