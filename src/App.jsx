@@ -734,7 +734,8 @@ function Styles() {
 }
 .header-actions{display:flex;align-items:center;gap:10px}.header-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:16px;background:#0f172a;color:#fff;font-weight:900;white-space:nowrap;flex-shrink:0}.menu-btn{display:none;border:0;background:#0f172a;color:white;border-radius:12px;padding:10px;cursor:pointer}.mobile-menu{display:none}
       .hero{position:relative;overflow:hidden;color:white;background:linear-gradient(120deg,rgba(3,20,45,.96),rgba(10,62,121,.84)),url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=80");background-size:cover;background-position:center}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:54px 54px;opacity:.35}.hero-inner{position:relative;max-width:1200px;margin:0 auto;padding:92px 20px 150px;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}.tag{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#dbeafe;font-weight:800;margin-bottom:22px}.hero h1{margin:0;font-size:clamp(42px,6vw,72px);line-height:1.08;letter-spacing:-1.5px}.hero h1 span{display:block;margin-top:14px;color:#dbeafe;font-size:clamp(28px,4vw,46px)}.title-line{display:inline}.hero p{max-width:700px;margin:26px 0 0;color:#e2e8f0;font-size:18px;line-height:2}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:16px;font-weight:900;transition:.25s}.btn-primary{background:#2563eb;color:#fff}.btn-secondary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.32);color:#fff}.btn-secondary.dark{background:#0f172a;color:#fff;border:none}.btn-primary:hover,.btn-secondary:hover{transform:translateY(-2px)}
-      .hero-card{border-radius:32px;padding:28px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);box-shadow:0 35px 90px rgba(0,0,0,.32);backdrop-filter:blur(16px)}.hero-card-title{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}.hero-card-title strong{display:block;font-size:28px}.hero-card-title span{color:#bfdbfe;font-weight:700}..route-box{
+      .hero-card{border-radius:32px;padding:28px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);box-shadow:0 35px 90px rgba(0,0,0,.32);backdrop-filter:blur(16px)}.hero-card-title{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:22px}.hero-card-title strong{display:block;font-size:28px}.hero-card-title span{color:#bfdbfe;font-weight:700}.
+      .route-box{
   position:relative;
   height:220px;
   overflow:hidden;
@@ -743,7 +744,7 @@ function Styles() {
       rgba(5,15,35,.45),
       rgba(5,15,35,.45)
     ),
-    url("/global-logistics.jpg");
+    url("global-logistics.jpg.png");
 
   background-size:cover;
   background-position:center;
