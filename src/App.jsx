@@ -321,7 +321,7 @@ export default function App() {
 
             <div>
               <SectionBadge>尚順特色</SectionBadge>
-              <h2 className="text-4xl font-white leading-tight text-blue-100 md:text-6xl">
+              <h2 className="text-4xl font-black leading-tight text-blue-100 md:text-6xl">
                 我們的核心不是低價，
                 <br />
                 而是穩定、安全、清楚
@@ -383,11 +383,11 @@ export default function App() {
           <div className="relative z-10 mx-auto max-w-7xl">
             <div className="mb-14 max-w-5xl">
               <SectionBadge>物流流程</SectionBadge>
-              <h2 className="text-4xl font-black leading-tight text-blue-100 md:text-6xl">
-                流程透明，
-                <br />
-                進度清楚掌握
-              </h2>
+              <h2 className="text-4xl font-black leading-tight !text-cyan-100 md:text-6xl">
+  流程透明，
+  <br />
+  進度清楚掌握
+</h2>
               <p className="mt-6 text-lg leading-loose text-blue-100">
                 透過標準化作業流程，協助客戶從詢價到派送完成都能掌握進度。
               </p>
