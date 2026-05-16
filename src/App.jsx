@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 
 const companyInfo = {
-  companyName: "尚順國際運通",
+  companyName: "尚順國際運通有限公司",
   phone: "04-22529955",
   email: "sunshine0422520071@gmail.com",
   facebook: "https://www.facebook.com/SunshineTXGTW/",
