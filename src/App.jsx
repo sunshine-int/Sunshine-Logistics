@@ -75,9 +75,24 @@ export default function App() {
               </a>
 
               <a
-                href="https://lin.ee/Dlq7FY2"
-                target="_blank"
-}
+  href="https://lin.ee/Dlq7FY2"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="line-btn"
+>
+  LINE 線上客服
+</a>
+</div>
+          </div>
+
+          <div>
+            <img
+              src="/hero-bg.png"
+              alt="尚順國際物流背景圖"
+              className="hero-image"
+            />
+          </div>
+        </div>
       </section>
       )}
 
