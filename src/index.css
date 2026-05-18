@@ -1,35 +1,65 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
+* {
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.app-container {
-  min-height: 100vh;
+.card {
+  background: #f4f7fb;
+  padding: 30px;
+  border-radius: 15px;
 }
 
-.header {
+.dark-card {
+  background: #082f5b;
+  color: white;
+}
+
+.process-image {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.step {
+  background: #001b44;
+  color: #73c7ff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.faq-box {
+  background: white;
+  color: #0a2c66;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-section {
   background: #001b44;
   color: white;
-  padding: 20px;
 }
 
-.hero-section {
-  padding: 60px;
-  background: #0a2c66;
-  color: white;
+.contact-box {
+  background: #082f5b;
+  padding: 30px;
+  border-radius: 20px;
 }
 
-.hero-image {
+.full {
   width: 100%;
-  max-width: 500px;
-}
-
-.line-btn {
-  background: #06c755;
-  color: white;
-  padding: 12px 20px;
-  display: inline-block;
-  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer {
@@ -37,4 +67,19 @@ body {
   color: #999;
   text-align: center;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-grid,
+  .step-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
 }
