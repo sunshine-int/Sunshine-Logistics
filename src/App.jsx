@@ -93,5 +93,11 @@ export default function App() {
         </div>
       </section>
       )}
-
+      {/* Footer */}
+      <footer className="bg-black text-gray-400 py-6 text-center text-sm">
+        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS. All Rights Reserved.
+      </footer>
+    </div>
+  );
+}
 
