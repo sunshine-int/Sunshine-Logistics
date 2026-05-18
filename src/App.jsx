@@ -2,102 +2,47 @@ import React from 'react';
 import './index.css';
 
 export default function App() {
-  const [activePage, setActivePage] = React.useState('home');
-  const navItems = [
-    { id: 'home', zh: '首頁', en: 'Home' },
-    { id: 'about', zh: '關於我們', en: 'About Us' },
-    { id: 'services', zh: '服務項目', en: 'Services' },
-    { id: 'process', zh: '物流流程', en: 'Logistics Process' },
-    { id: 'faq', zh: '常見問題', en: 'FAQ' },
-    { id: 'contact', zh: '聯絡我們', en: 'Contact Us' },
-  ];
-
   return (
     <div className="app-container">
-      {/* Header */}
       <header className="header">
         <div className="header-inner">
-          <div className="logo-group">
-            <img
-              src="/logo.png"
-              alt="Shang Shun Logo"
-              className="logo"
-            />
-            <div>
-              <h1 className="text-2xl font-bold">SHANG SHUN INTERNATIONAL LOGISTICS</h1>
-              <p className="text-sm text-gray-300">尚順國際物流｜專業全球運輸服務</p>
-            </div>
-          </div>
-
-          <nav className="nav">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActivePage(item.id);
-                }}
-                className={`transition duration-300 ${activePage === item.id ? 'text-cyan-300' : 'hover:text-cyan-300'}`}
-              >
-                {item.zh} / {item.en}
-              </a>
-            ))}
-          </nav>
+          <h1>SHANG SHUN INTERNATIONAL LOGISTICS</h1>
         </div>
       </header>
 
-      {/* Hero */}
-      {activePage === 'home' && (
-      <section
-        id="home"
-        className="hero-section"
-      >
+      <section className="hero-section">
         <div className="hero-content">
           <div>
-            <h2 className="text-5xl font-extrabold leading-tight mb-6">
-              全球物流運輸服務
-              <br />
-              <span className="text-cyan-300">Global Freight Solutions</span>
-            </h2>
+            <h2>全球物流運輸服務</h2>
 
-            <p className="text-lg text-gray-200 leading-relaxed mb-8">
-              尚順國際物流專注於全球貨運與跨境運輸，
-              提供企業最穩定的物流整合服務與國際配送方案。
+            <p>
+              尚順國際物流專注於全球貨運與跨境運輸。
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div>
               <a
-                href="#contact"
-                className="contact-btn"
+                href="https://lin.ee/Dlq7FY2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="line-btn"
               >
-                立即聯絡 Contact Us
+                LINE 線上客服
               </a>
-
-              <a
-  href="https://lin.ee/Dlq7FY2"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="line-btn"
->
-  LINE 線上客服
-</a>
-</div>
+            </div>
           </div>
 
           <div>
             <img
               src="/hero-bg.png"
-              alt="尚順國際物流背景圖"
+              alt="物流背景"
               className="hero-image"
             />
           </div>
         </div>
       </section>
-      )}
 
       <footer className="footer">
-        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS. All Rights Reserved.
+        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS
       </footer>
     </div>
   );
