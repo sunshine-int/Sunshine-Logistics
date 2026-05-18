@@ -78,3 +78,12 @@ export default function App() {
                 href="https://lin.ee/Dlq7FY2"
                 target="_blank"
 }
+      </section>
+      )}
+
+      <footer className="footer">
+        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS. All Rights Reserved.
+      </footer>
+    </div>
+  );
+}
