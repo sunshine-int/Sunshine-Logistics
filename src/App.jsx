@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 
 export default function App() {
   const [activePage, setActivePage] = React.useState('home');
@@ -12,15 +13,15 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-800 scroll-smooth">
+    <div className="app-container">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-[#001B44] text-white shadow-lg">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+      <header className="header">
+        <div className="header-inner">
+          <div className="logo-group">
             <img
               src="/logo.png"
               alt="Shang Shun Logo"
-              className="w-14 h-14 object-contain rounded-xl bg-white p-1"
+              className="logo"
             />
             <div>
               <h1 className="text-2xl font-bold">SHANG SHUN INTERNATIONAL LOGISTICS</h1>
@@ -28,7 +29,7 @@ export default function App() {
             </div>
           </div>
 
-          <nav className="hidden lg:flex gap-6 text-sm font-medium">
+          <nav className="nav">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -50,9 +51,9 @@ export default function App() {
       {activePage === 'home' && (
       <section
         id="home"
-        className="relative bg-gradient-to-r from-[#001B44] to-[#003C8F] text-white"
+        className="hero-section"
       >
-        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="hero-content">
           <div>
             <h2 className="text-5xl font-extrabold leading-tight mb-6">
               全球物流運輸服務
@@ -68,7 +69,7 @@ export default function App() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-2xl font-bold transition"
+                className="contact-btn"
               >
                 立即聯絡 Contact Us
               </a>
@@ -76,28 +77,4 @@ export default function App() {
               <a
                 href="https://lin.ee/Dlq7FY2"
                 target="_blank"
-                className="bg-[#06C755] hover:opacity-90 text-white px-6 py-3 rounded-2xl font-bold transition"
-              >
-                LINE 線上客服
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <img
-              src="/hero-bg.png"
-              alt="尚順國際物流背景圖"
-              className="rounded-3xl shadow-2xl"
-            />
-          </div>
-        </div>
-      </section>
-      )}
-      {/* Footer */}
-      <footer className="bg-black text-gray-400 py-6 text-center text-sm">
-        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS. All Rights Reserved.
-      </footer>
-    </div>
-  );
 }
-
