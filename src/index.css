@@ -1,25 +1,40 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background: #f4f7fb;
-  color: #082f5b;
+  font-family: sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.app-container {
+  min-height: 100vh;
 }
 
-button,
-input,
-textarea {
-  font-family: inherit;
+.header {
+  background: #001b44;
+  color: white;
+  padding: 20px;
+}
+
+.hero-section {
+  padding: 60px;
+  background: #0a2c66;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+}
+
+.line-btn {
+  background: #06c755;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.footer {
+  background: black;
+  color: #999;
+  text-align: center;
+  padding: 20px;
 }
