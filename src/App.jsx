@@ -1,82 +1,97 @@
 import React from 'react';
-            <div className="space-y-6 text-lg">
-              <div>
-                <p className="font-bold mb-2">EMAIL</p>
-                <a
-                  href="mailto:sunshine0422520071@gmail.com"
-                  className="text-cyan-300 hover:underline"
-                >
-                  sunshine0422520071@gmail.com
-                </a>
-              </div>
 
-              <div>
-                <p className="font-bold mb-2">Facebook</p>
-                <a
-                  href="https://www.facebook.com/SunshineTXGTW/"
-                  target="_blank"
-                  className="text-cyan-300 hover:underline"
-                >
-                  尚順國際物流 Facebook 專頁
-                </a>
-              </div>
+export default function App() {
+  const [activePage, setActivePage] = React.useState('home');
+  const navItems = [
+    { id: 'home', zh: '首頁', en: 'Home' },
+    { id: 'about', zh: '關於我們', en: 'About Us' },
+    { id: 'services', zh: '服務項目', en: 'Services' },
+    { id: 'process', zh: '物流流程', en: 'Logistics Process' },
+    { id: 'faq', zh: '常見問題', en: 'FAQ' },
+    { id: 'contact', zh: '聯絡我們', en: 'Contact Us' },
+  ];
 
-              <div>
-                <p className="font-bold mb-2">LINE 官方帳號</p>
-                <a
-                  href="https://lin.ee/Dlq7FY2"
-                  target="_blank"
-                  className="inline-block bg-[#06C755] hover:opacity-90 px-6 py-3 rounded-2xl font-bold transition"
-                >
-                  加入 LINE 好友
-                </a>
-              </div>
-            </div>
-
-            <div className="mt-10">
-              <img
-                src="/line-code.png"
-                alt="LINE QR CODE"
-                className="w-56 rounded-2xl bg-white p-3"
-              />
+  return (
+    <div className="min-h-screen bg-white text-gray-800 scroll-smooth">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-[#001B44] text-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <img
+              src="/logo.png"
+              alt="Shang Shun Logo"
+              className="w-14 h-14 object-contain rounded-xl bg-white p-1"
+            />
+            <div>
+              <h1 className="text-2xl font-bold">SHANG SHUN INTERNATIONAL LOGISTICS</h1>
+              <p className="text-sm text-gray-300">尚順國際物流｜專業全球運輸服務</p>
             </div>
           </div>
 
-          <div className="space-y-8">
-            <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-              <iframe
-                src="https://www.google.com/maps?q=https://share.google/oBZlTBPBTKYPpShK5&output=embed"
-                width="100%"
-                height="350"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Map"
-              ></iframe>
-            </div>
-
-            <div className="bg-white rounded-3xl overflow-hidden shadow-2xl p-2">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform?embedded=true"
-                width="100%"
-                height="700"
-                frameBorder="0"
-                marginHeight="0"
-                marginWidth="0"
-                title="Google Form"
+          <nav className="hidden lg:flex gap-6 text-sm font-medium">
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActivePage(item.id);
+                }}
+                className={`transition duration-300 ${activePage === item.id ? 'text-cyan-300' : 'hover:text-cyan-300'}`}
               >
-                正在載入…
-              </iframe>
+                {item.zh} / {item.en}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      {activePage === 'home' && (
+      <section
+        id="home"
+        className="relative bg-gradient-to-r from-[#001B44] to-[#003C8F] text-white"
+      >
+        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-5xl font-extrabold leading-tight mb-6">
+              全球物流運輸服務
+              <br />
+              <span className="text-cyan-300">Global Freight Solutions</span>
+            </h2>
+
+            <p className="text-lg text-gray-200 leading-relaxed mb-8">
+              尚順國際物流專注於全球貨運與跨境運輸，
+              提供企業最穩定的物流整合服務與國際配送方案。
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-2xl font-bold transition"
+              >
+                立即聯絡 Contact Us
+              </a>
+
+              <a
+                href="https://lin.ee/Dlq7FY2"
+                target="_blank"
+                className="bg-[#06C755] hover:opacity-90 text-white px-6 py-3 rounded-2xl font-bold transition"
+              >
+                LINE 線上客服
+              </a>
             </div>
+          </div>
+
+          <div>
+            <img
+              src="/hero-bg.png"
+              alt="尚順國際物流背景圖"
+              className="rounded-3xl shadow-2xl"
+            />
           </div>
         </div>
       </section>
       )}
 
-      {/* Footer */}
-      <footer className="bg-black text-gray-400 py-6 text-center text-sm">
-        © 2026 SHANG SHUN INTERNATIONAL LOGISTICS. All Rights Reserved.
-      </footer>
-    </div>
-  );
-}
+
