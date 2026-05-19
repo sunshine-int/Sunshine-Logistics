@@ -30,15 +30,3 @@ const services = [
     desc: '提供兩岸小三通物流服務，促進快速配送。'
   }
 ]
-
-<div className="service-card" key={item.title}>
-  <div className="service-icon-box">
-    <div className="service-icon">
-      {item.icon}
-    </div>
-  </div>
-
-  <h3>{item.title}</h3>
-
-  <p>{item.desc}</p>
-</div>
