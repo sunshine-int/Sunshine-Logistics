@@ -1,8 +1,3 @@
-{# 尚順國際運通有限公司｜完整網站專案檔案
-
-## package.json
-
-```json
 {
   "name": "shangshun-logistics",
   "private": true,
