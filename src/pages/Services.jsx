@@ -27,38 +27,44 @@ export default function Services() {
   ]
 
   return (
-    <div className="page page-dark">
-      <div className="hero-banner">
-        <div className="overlay">
-          <div className="container">
-            <p className="breadcrumb">首頁 / 服務項目</p>
+    <div className="services-page">
+      <div className="services-overlay">
+        <div className="container">
+          <p className="breadcrumb">
+            首頁 / 服務項目
+          </p>
 
-            <h1 className="page-main-title">
-              服務項目
-            </h1>
+          <h1 className="services-title">
+            服務項目
+          </h1>
 
-            <div className="service-header">
-              <p className="mini-title">我們的服務</p>
+          <div className="services-header">
+            <p className="small-title">
+              我們的服務
+            </p>
 
-              <h2>
-                一站式國際物流整合服務
-              </h2>
+            <h2>
+              一站式國際物流整合服務
+            </h2>
 
-              <p className="intro">
-                提供海運、空運、陸運、倉儲、報關等完整物流解決方案，
-                滿足不同的國際需求。
-              </p>
-            </div>
+            <p className="services-intro">
+              提供海運、空運、陸運、倉儲、報關等完整物流解決方案，
+              滿足不同的國際需求。
+            </p>
+          </div>
 
-            <div className="service-grid">
-              {services.map((item) => (
-                <div className="service-card" key={item.title}>
-                  <h3>{item.title}</h3>
-
-                  <p>{item.desc}</p>
+          <div className="services-grid">
+            {services.map((item) => (
+              <div className="service-card" key={item.title}>
+                <div className="service-icon">
+                  🚚
                 </div>
-              ))}
-            </div>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
