@@ -499,3 +499,194 @@ body {
     text-align: center;
   }
 }
+
+.process-page {
+  min-height: 100vh;
+  background: url('/hero-bg.png') center center / cover no-repeat;
+  position: relative;
+  color: #d9ecff;
+}
+
+.process-overlay {
+  min-height: 100vh;
+  background: rgba(0, 12, 40, 0.72);
+  padding: 60px 0;
+}
+
+.breadcrumb {
+  color: #b7d4ff;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.process-title {
+  font-size: 72px;
+  font-weight: 900;
+  color: #7cc7ff;
+  margin-bottom: 40px;
+}
+
+.process-subtitle {
+  font-size: 44px;
+  font-weight: 800;
+  color: #48b6ff;
+  margin-bottom: 24px;
+}
+
+.process-description {
+  font-size: 24px;
+  line-height: 1.9;
+  color: #dcecff;
+  margin-bottom: 80px;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.step-card {
+  width: 180px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #287dff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: -28px;
+  z-index: 10;
+  position: relative;
+}
+
+.step-icon {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #2d8fff;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #62b8ff;
+  background: rgba(10, 25, 60, 0.65);
+}
+
+.step-card h3 {
+  font-size: 36px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  color: #56bbff;
+  font-weight: 800;
+}
+
+.step-card p {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #dbeaff;
+}
+
+.step-arrow {
+  font-size: 60px;
+  color: #46aaff;
+  margin: 0 8px;
+}
+
+.process-info-box {
+  border: 1px solid rgba(90, 170, 255, 0.35);
+  border-radius: 28px;
+  padding: 50px;
+  background: rgba(8, 20, 55, 0.78);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  backdrop-filter: blur(10px);
+}
+
+.info-title {
+  font-size: 42px;
+  color: #4db8ff;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.info-left p {
+  font-size: 24px;
+  line-height: 2;
+  color: #e3f1ff;
+}
+
+.info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #dcecff;
+  font-size: 24px;
+}
+
+.info-item svg {
+  color: #36b3ff;
+}
+
+@media (max-width: 1200px) {
+  .process-steps {
+    gap: 30px;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .process-info-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-title {
+    font-size: 48px;
+  }
+
+  .process-subtitle {
+    font-size: 30px;
+  }
+
+  .process-description {
+    font-size: 18px;
+  }
+
+  .step-card h3 {
+    font-size: 26px;
+  }
+
+  .step-card p {
+    font-size: 18px;
+  }
+
+  .info-title {
+    font-size: 30px;
+  }
+
+  .info-left p,
+  .info-item {
+    font-size: 18px;
+  }
+}
