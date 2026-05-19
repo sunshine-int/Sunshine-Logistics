@@ -1,146 +1,65 @@
-import React from 'react'
 import {
-  Headphones,
-  ClipboardList,
-  PackageCheck,
   Ship,
-  FileSearch,
+  Plane,
   Truck,
-  CheckCircle2,
+  Warehouse,
+  FileText,
+  Package
 } from 'lucide-react'
 
-export default function Process() {
-  const steps = [
+export default function Services() {
+
+  const services = [
     {
-      no: '01',
-      icon: <Headphones size={60} />,
-      title: '客戶諮詢',
-      desc1: '了解需求',
-      desc2: '提供運輸建議',
+      icon: <Ship size={38} />,
+      title: '海運服務',
+      text: '整櫃、併櫃運輸，遍佈全球主要港口，提供穩定海運方案。'
     },
     {
-      no: '02',
-      icon: <ClipboardList size={60} />,
-      title: '報價確認',
-      desc1: '提供報價方案',
-      desc2: '確認服務細節',
+      icon: <Plane size={38} />,
+      title: '空運服務',
+      text: '快速、安全的空運服務，適合高時效貨物運輸。'
     },
     {
-      no: '03',
-      icon: <PackageCheck size={60} />,
-      title: '安排出貨',
-      desc1: '安排貨物與報關',
-      desc2: '準備文件',
+      icon: <Truck size={38} />,
+      title: '陸運服務',
+      text: '提供跨境陸運與配送，連接各國內陸運輸需求。'
     },
     {
-      no: '04',
-      icon: <Ship size={60} />,
-      title: 'OG 運中',
-      desc1: '全程追蹤貨物',
-      desc2: '狀態回報',
+      icon: <Warehouse size={38} />,
+      title: '倉儲服務',
+      text: '專業倉儲管理，支援短期與長期倉儲需求。'
     },
     {
-      no: '05',
-      icon: <FileSearch size={60} />,
-      title: '清關作業',
-      desc1: '專業報關',
-      desc2: '快速通關',
+      icon: <FileText size={38} />,
+      title: '報關服務',
+      text: '專業報關團隊，協助您快速通關，節省時間成本。'
     },
     {
-      no: '06',
-      icon: <Truck size={60} />,
-      title: '配送完成',
-      desc1: '貨物安全送達',
-      desc2: '完成交付',
-    },
+      icon: <Package size={38} />,
+      title: '小三通服務',
+      text: '提供兩岸小三通物流服務，促進快速配送。'
+    }
   ]
 
   return (
-    <div className="process-page">
-      <div className="process-overlay">
-        <div className="container">
-          <div className="breadcrumb">
-            首頁 / 物流流程
-          </div>
+    <section className="page-section">
 
-          <h1 className="process-title">
-            物流流程
-          </h1>
+      <div className="container">
 
-          <div className="process-subtitle">
-            流程透明・進度清楚掌握
-          </div>
+        <h1 className="page-heading">服務項目</h1>
 
-          <p className="process-description">
-            標準化作業流程，確保每一步驟都精準執行，
-            <br />
-            讓您隨時掌握貨物最新狀態。
-          </p>
+        <p className="small-blue">我們的服務</p>
 
-          <div className="process-steps">
-            {steps.map((step, index) => (
-              <React.Fragment key={step.no}>
-                <div className="step-card">
-                  <div className="step-number">
-                    {step.no}
-                  </div>
+        <h2 className="big-title">
+          一站式國際物流整合服務
+        </h2>
 
-                  <div className="step-icon">
-                    {step.icon}
-                  </div>
+        <p className="content-text">
+          提供海運、空運、陸運、倉儲、報關等完整物流解決方案。
+        </p>
 
-                  <h3>{step.title}</h3>
+        <div className="service-grid">
 
-                  <p>{step.desc1}</p>
-                  <p>{step.desc2}</p>
-                </div>
-
-                {index !== steps.length - 1 && (
-                  <div className="step-arrow">
-                    →
-                  </div>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
-
-          <div className="process-info-box">
-            <div className="info-left">
-              <div className="info-title">
-                資料完整・操作更穩定
-              </div>
-
-              <p>
-                提供即時追蹤系統與進度通知，
-                讓您隨時掌握貨物位置與狀態，
-                運輸更安心。
-              </p>
-            </div>
-
-            <div className="info-right">
-              <div className="info-item">
-                <CheckCircle2 size={22} />
-                <span>線上查詢：即時追蹤貨物狀態</span>
-              </div>
-
-              <div className="info-item">
-                <CheckCircle2 size={22} />
-                <span>訊息通知：重要進度主動通知</span>
-              </div>
-
-              <div className="info-item">
-                <CheckCircle2 size={22} />
-                <span>文件管理：電子文件安全管理</span>
-              </div>
-
-              <div className="info-item">
-                <CheckCircle2 size={22} />
-                <span>客服支援：專人即時協助處理</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+          {services.map((item, index) => (
 }
