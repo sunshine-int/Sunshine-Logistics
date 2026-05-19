@@ -404,3 +404,142 @@ p{
     font-size: 32px;
   }
 }
+
+.contact-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,20,60,.72), rgba(0,20,60,.88)),
+    url('/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #d9ecff;
+}
+
+.contact-overlay {
+  padding: 80px 0;
+}
+
+.contact-main-title {
+  font-size: 64px;
+  color: #8fd0ff;
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 40px;
+}
+
+.contact-left h2 {
+  color: #63c6ff;
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
+.contact-desc {
+  color: #dcecff;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.contact-info-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(5,28,75,.75);
+  border: 1px solid rgba(120,180,255,.2);
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.contact-info-box p {
+  margin: 0;
+  color: #e6f3ff;
+}
+
+.facebook-btn,
+.line-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  margin-top: 18px;
+  transition: .3s;
+}
+
+.facebook-btn {
+  background: linear-gradient(90deg,#1877f2,#3b82f6);
+}
+
+.line-btn {
+  background: #06C755;
+}
+
+.facebook-btn:hover,
+.line-btn:hover {
+  opacity: .9;
+}
+
+.contact-form-area {
+  background: rgba(5,28,75,.55);
+  border: 1px solid rgba(120,180,255,.2);
+  border-radius: 22px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+.contact-form-area input,
+.contact-form-area textarea {
+  width: 100%;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  padding: 18px;
+  color: white;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.contact-form-area input::placeholder,
+.contact-form-area textarea::placeholder {
+  color: #c6dfff;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  border-radius: 14px;
+  background: linear-gradient(90deg,#2d7fff,#63c6ff);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.google-form-box {
+  margin-top: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(120,180,255,.2);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-main-title {
+    font-size: 46px;
+  }
+
+  .contact-left h2 {
+    font-size: 30px;
+  }
+}
