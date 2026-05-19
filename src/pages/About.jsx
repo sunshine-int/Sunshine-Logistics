@@ -1,24 +1,95 @@
+import {
+  Globe,
+  ShieldCheck,
+  Headphones,
+  Users,
+} from 'lucide-react'
 
-export default function About(){
-  return(
-    <section className="page">
-      <div className="container two-col">
-        <img src="/global-logistics.png" className="hero-img" />
+export default function About() {
+  return (
+    <section
+      className="page-section"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,20,60,0.82), rgba(0,20,60,0.82)), url('/hero-bg.png')",
+      }}
+    >
+      <div className="container">
+        <p className="page-breadcrumb">首頁 / 關於我們</p>
 
-        <div>
-          <h1>關於我們 About Us</h1>
+        <h1 className="page-main-title">關於我們</h1>
 
-          <p>
-          尚順國際物流致力於提供安全、穩定且高效率的國際物流服務，
-          整合海運、空運、倉儲、報關與配送資源，
-          協助企業降低物流成本並提升配送效率。
-          </p>
+        <div className="about-layout">
+          {/* 左側圖片 */}
+          <div className="about-image-wrap">
+            <img
+              src="/about-ship.jpg"
+              alt="about"
+              className="about-image"
+            />
+          </div>
 
-          <div className="cards">
-            <div className="card">專業團隊</div>
-            <div className="card">全球網絡</div>
-            <div className="card">安全控管</div>
-            <div className="card">24H 客服</div>
+          {/* 右側內容 */}
+          <div className="about-content">
+            <p className="about-subtitle">
+              專業・誠信・效率
+            </p>
+
+            <h2 className="about-title">
+              我們以專業守護每一票貨物
+            </h2>
+
+            <p className="about-desc">
+              尚順國際物流致力於提供安全、可靠且高效率的國際物流服務，
+              以客戶需求為核心，透過完善的物流網絡與專業團隊，
+              協助企業降低成本、提升供應鏈效率。
+            </p>
+
+            <div className="about-feature-list">
+              <div className="about-feature-item">
+                <div className="about-icon">
+                  <Users size={26} />
+                </div>
+
+                <div>
+                  <h3>專業團隊</h3>
+                  <p>具備豐富國際物流經驗</p>
+                </div>
+              </div>
+
+              <div className="about-feature-item">
+                <div className="about-icon">
+                  <Globe size={26} />
+                </div>
+
+                <div>
+                  <h3>全球網絡</h3>
+                  <p>緊密合作夥伴遍佈全球</p>
+                </div>
+              </div>
+
+              <div className="about-feature-item">
+                <div className="about-icon">
+                  <ShieldCheck size={26} />
+                </div>
+
+                <div>
+                  <h3>安全控管</h3>
+                  <p>嚴格把關貨物運送過程</p>
+                </div>
+              </div>
+
+              <div className="about-feature-item">
+                <div className="about-icon">
+                  <Headphones size={26} />
+                </div>
+
+                <div>
+                  <h3>貼心服務</h3>
+                  <p>即時回應客戶各項需求</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
