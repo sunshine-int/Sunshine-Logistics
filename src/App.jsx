@@ -89,7 +89,7 @@ function Button({ href, children, variant = 'primary', className = '' }) {
 
 function SectionTitle({ eyebrow, title, desc }) {
   return (
-    <div className="mb-10 max-w-3xl">
+    <div className="mb-10 max-w-full">
       <p className="mb-3 text-sm font-black tracking-[.24em] text-cyan-300">{eyebrow}</p>
       <h2 className="text-3xl font-black leading-tight md:text-5xl">{title}</h2>
       {desc && <p className="mt-4 leading-8 text-slate-300">{desc}</p>}
