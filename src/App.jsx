@@ -110,7 +110,7 @@ function Card({ title, desc, Icon }) {
 function App() {
   return (
     <div className="min-h-screen overflow-hidden bg-slate-950 text-white">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/30 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
           <a href="#home" className="flex items-center gap-3">
             <img src="/logo.png" alt="尚順國際運通" className="h-11 w-auto rounded-md bg-white/95 p-1" />
