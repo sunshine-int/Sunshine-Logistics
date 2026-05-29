@@ -128,7 +128,7 @@ function App() {
 
       <section id="home" className="relative min-h-screen pt-28">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
-        <div className="absolute inset-0 bg-slate-950/75" />
+        <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
         <div className="absolute inset-0 bg-grid-soft opacity-60" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_.92fr]">
@@ -153,7 +153,7 @@ function App() {
             </div>
           </div>
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-card backdrop-blur-xl">
-            <div className="rounded-[1.5rem] bg-slate-950/70 p-6">
+            <div className="rounded-[1.5rem] bg-slate-950/30 p-6">
               <p className="text-sm font-black tracking-[.18em] text-cyan-300">HOT SEARCH</p>
               <h2 className="mt-3 text-2xl font-black">熱門搜尋服務</h2>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -183,7 +183,7 @@ function App() {
           <SectionTitle eyebrow="SHOPPING CONSOLIDATION" title="淘寶／拼多多／阿里巴巴／1688 網購集運回台" desc="多平台商品可先寄至中國集貨倉，確認到貨後再合併安排回台，適合個人網購、批發採購、樣品測試與小量出貨。" />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {shoppingItems.map(([title, desc]) => (
-              <div key={title} className="rounded-3xl border border-white/10 bg-slate-950/70 p-6 shadow-card">
+              <div key={title} className="rounded-3xl border border-white/10 bg-slate-950/30 p-6 shadow-card">
                 <ShoppingCart className="mb-5 text-cyan-300" size={34}/>
                 <h3 className="text-xl font-black">{title}</h3>
                 <p className="mt-3 leading-7 text-slate-300">{desc}</p>
@@ -194,7 +194,7 @@ function App() {
             <h3 className="text-2xl font-black">網購集運操作流程</h3>
             <div className="mt-5 grid gap-4 md:grid-cols-4">
               {['提供商品資訊', '賣家寄至集貨倉', '確認件數尺寸重量', '安排合併回台'].map((step, i) => (
-                <div key={step} className="rounded-2xl bg-slate-950/60 p-5">
+                <div key={step} className="rounded-2xl bg-slate-950/30 p-5">
                   <p className="text-3xl font-black text-cyan-300">0{i + 1}</p>
                   <p className="mt-2 font-bold">{step}</p>
                 </div>
@@ -216,7 +216,7 @@ function App() {
           <SectionTitle eyebrow="SPECIAL CARGO" title="特殊貨物也可協助評估" desc="化工品、敏感貨、電池、大型家具與大型機具，請提供完整產品資料及照片，我司協助評估合適方案。" />
           <div className="grid gap-4 md:grid-cols-5">
             {special.map(item => (
-              <div key={item} className="rounded-2xl border border-cyan-300/20 bg-slate-950/70 p-5 text-center font-black">
+              <div key={item} className="rounded-2xl border border-cyan-300/20 bg-slate-950/30 p-5 text-center font-black">
                 ✔ {item}
               </div>
             ))}
@@ -238,7 +238,7 @@ function App() {
 
       <section className="relative py-20">
         <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/global-logistics.png')" }} />
-        <div className="absolute inset-0 bg-slate-950/80" />
+        <div className="absolute inset-0 bg-slate-950/30" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2">
           <div>
             <SectionTitle eyebrow="WHY US" title="為什麼選擇尚順國際運通" desc="專人協助確認貨況、資料與清關需求，讓客戶更安心掌握每一步。" />
@@ -274,7 +274,7 @@ function App() {
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-white">
               <iframe src={company.formEmbed} width="100%" height="760" frameBorder="0" marginHeight="0" marginWidth="0">正在載入…</iframe>
             </div>
-            <div className="rounded-3xl border border-cyan-300/20 bg-slate-950/80 p-6 text-center shadow-card">
+            <div className="rounded-3xl border border-cyan-300/20 bg-slate-950/30 p-6 text-center shadow-card">
               <img src="/line-qr.png" alt="LINE QR Code" className="mx-auto w-56 rounded-3xl bg-white p-3" />
               <h3 className="mt-5 text-2xl font-black">掃描 LINE QR Code</h3>
               <p className="mt-3 leading-7 text-slate-300">立即提供商品資訊或貨件資料，我司協助評估報價。</p>
