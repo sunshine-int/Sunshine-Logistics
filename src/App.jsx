@@ -24,8 +24,8 @@ const company = {
   address: '台中市西屯區龍洋巷17之7號',
   line: 'https://lin.ee/Dlq7FY2',
   fb: 'https://www.facebook.com/profile.php?id=61590203879333',
-  map: 'https://maps.google.com/?q=台中市西屯區龍洋巷17之7號',
-  mapEmbed: 'https://www.google.com/maps?q=台中市西屯區龍洋巷17之7號&output=embed',
+  map: 'https://www.google.com/maps/search/?api=1&query=尚順國際運通有限公司',
+  mapEmbed: 'https://www.google.com/maps?q=尚順國際運通有限公司&output=embed',
   formEmbed: 'https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform?embedded=true',
 }
 
