@@ -175,30 +175,22 @@ function App() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
           <section id="quote" className="scroll-mt-24 py-20">
-  <div className="mx-auto max-w-7xl px-6">
-    <SectionTitle
-      eyebrow="ONLINE QUOTE"
-      title="線上詢價"
-      desc="請填寫以下表單，我司將依貨物狀況協助評估最合適的物流方案。"
-    />
+  <div className="mt-8 flex flex-wrap gap-3">
 
-    <div className="overflow-hidden rounded-3xl border border-cyan-300/20 bg-white shadow-[0_0_45px_rgba(34,211,238,.25)]">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform?embedded=true"
-        width="100%"
-        height="1865"
-        frameBorder="0"
-        marginHeight="0"
-        marginWidth="0"
-      >
-        載入中…
-      </iframe>
-    </div>
-  </div>
-</section>
-              <Button href="#shopping" variant="secondary">查看集運流程</Button>
-              <Button href={`tel:${company.phone}`} variant="secondary"><Phone size={18}/> {company.phone}</Button>
-            </div>
+  <Button href="#quote">
+    立即詢價 <ArrowRight size={18}/>
+  </Button>
+
+  <Button href="#process" variant="secondary">
+    查看集運流程
+  </Button>
+
+  <Button href={`tel:${company.phone}`} variant="secondary">
+    <Phone size={18}/>
+    04-22529955
+  </Button>
+
+</div>
           </div>
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-card backdrop-blur-xl">
             <div className="rounded-[1.5rem] bg-slate-950/30 p-6">
