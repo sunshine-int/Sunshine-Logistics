@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Facebook, MapPin, MessageCircle, Phone, Ship, Warehouse, Plane, PackageCheck } from 'lucide-react'
+import { ArrowRight, CheckCircle2, MapPin, MessageCircle, Phone, Ship, Warehouse, Plane, PackageCheck } from 'lucide-react'
 
 const company = {
   name: '尚順國際運通',
@@ -128,7 +128,7 @@ function App() {
           <div className="space-y-4 text-slate-200">
             <a className="flex items-center gap-3" href={`tel:${company.phone}`}><Phone className="text-cyan-300"/> {company.phone}</a>
             <a className="flex items-center gap-3" href={company.line} target="_blank"><MessageCircle className="text-cyan-300"/> LINE 立即詢價</a>
-            <a className="flex items-center gap-3" href={company.fb} target="_blank"><Facebook className="text-cyan-300"/> Facebook 粉絲專頁</a>
+            <a className="flex items-center gap-3" href={company.fb} target="_blank"><span className="text-cyan-300">📘</span> Facebook 粉絲專頁</a>
             <a className="flex items-center gap-3" href={company.map} target="_blank"><MapPin className="text-cyan-300"/> {company.address}</a>
           </div>
         </div>
