@@ -67,7 +67,7 @@ const services = [
 ]
 
 const special = ['化工產品', '敏感貨物', '電池產品', '大型家具', '大型機具設備']
-const routes = ['深圳', '東莞', '廣州', '廈門', '義烏', '上海', '寧波', '蘇州', '台灣全區配送']
+const routes = ['深圳', '東莞', '廣州', '廈門', '漳洲', '上海', '義烏', '台灣全區配送']
 const steps = ['需求確認', '提供產品資料', '評估報價', '集貨入倉', '報關清關', '派送完成']
 const reasons = ['中國集貨倉整合', '台中倉儲配送', '專人一對一服務', '即時貨況追蹤', '完整報關清關', '多元物流渠道規劃']
 const faqs = [
@@ -137,8 +137,8 @@ function App() {
               <Globe2 size={17}/> 中國貨回台｜淘寶集運｜拼多多集運｜1688集運
             </div>
             <h1 className="text-4xl font-black leading-tight md:text-6xl lg:text-7xl">
-              中國貨回台專家<br />
-              <span className="bg-gradient-to-r from-cyan-200 via-white to-blue-300 bg-clip-text text-transparent">網購集運一站式服務</span>
+              專業中國台灣進出口物流<br />
+              <span className="bg-gradient-to-r from-cyan-200 via-white to-blue-300 bg-clip-text text-transparent">網購集運服務</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-9 text-slate-100">
               尚順國際運通提供中國貨回台、淘寶集運回台、拼多多集運回台、1688集運回台、小三通物流、茶葉小三通、東南亞／全球物流與倉儲服務。
@@ -179,7 +179,7 @@ function App() {
       </section>
 
       <section id="shopping" className="bg-white/[.03] py-20">
-        <div className="mx-auto max-w-7xl px-5">
+        <div className="mx-auto max-w-full px-5">
           <SectionTitle eyebrow="SHOPPING CONSOLIDATION" title="淘寶／拼多多／阿里巴巴／1688 網購集運回台" desc="多平台商品可先寄至中國集貨倉，確認到貨後再合併安排回台，適合個人網購、批發採購、樣品測試與小量出貨。" />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {shoppingItems.map(([title, desc]) => (
