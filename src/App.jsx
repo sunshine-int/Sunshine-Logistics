@@ -80,33 +80,60 @@ const faqs = [
 ]
 
 function Button({ href, children, variant = 'primary', className = '' }) {
-  const base = 'inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black transition hover:-translate-y-0.5'
-  const styles = variant === 'primary'
-    ? 'bg-cyan-300 text-slate-950 shadow-glow hover:bg-white'
-    : 'border border-white/20 bg-white/5 text-white hover:border-cyan-300 hover:bg-cyan-300/10'
-  return <a href={href} target={href?.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className={`${base} ${styles} ${className}`}>{children}</a>
+  const base =
+    'group inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black transition-all duration-300 hover:-translate-y-1 hover:scale-105'
+
+  const styles =
+    variant === 'primary'
+      ? 'bg-cyan-300 text-slate-950 shadow-glow hover:bg-white hover:shadow-[0_0_45px_rgba(34,211,238,.75)]'
+      : 'border border-white/20 bg-white/5 text-white hover:border-cyan-300 hover:bg-cyan-300/10 hover:shadow-[0_0_35px_rgba(34,211,238,.35)]'
+
+  return (
+    <a
+      href={href}
+      target={href?.startsWith('http') ? '_blank' : undefined}
+      rel="noreferrer"
+      className={`${base} ${styles} ${className}`}
+    >
+      {children}
+    </a>
+  )
 }
 
 function SectionTitle({ eyebrow, title, desc }) {
   return (
-    <div className="mb-10 max-w-full">
-      <p className="mb-3 text-sm font-black tracking-[.24em] text-cyan-300">{eyebrow}</p>
-      <h2 className="text-3xl font-black leading-tight md:text-5xl">{title}</h2>
-      {desc && <p className="mt-4 leading-8 text-slate-300">{desc}</p>}
+    <div className="mb-10 w-full max-w-7xl">
+      <p className="mb-3 text-sm font-black tracking-[.24em] text-cyan-300">
+        {eyebrow}
+      </p>
+      <h2 className="text-3xl font-black leading-[1.15] md:text-5xl">
+        {title}
+      </h2>
+      {desc && (
+        <p className="mt-4 max-w-6xl leading-8 text-slate-300">
+          {desc}
+        </p>
+      )}
     </div>
   )
 }
 
 function Card({ title, desc, Icon }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/[.065] p-6 shadow-card transition hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-white/[.09]">
-      <Icon className="mb-5 text-cyan-300" size={36}/>
-      <h3 className="text-xl font-black">{title}</h3>
-      <p className="mt-3 leading-7 text-slate-300">{desc}</p>
+    <div className="group rounded-3xl border border-white/10 bg-white/[.065] p-6 shadow-card transition-all duration-300 hover:-translate-y-2 hover:border-cyan-300/70 hover:bg-cyan-300/[.08] hover:shadow-[0_0_45px_rgba(34,211,238,.35)]">
+      <Icon
+        className="mb-5 text-cyan-300 transition-all duration-300 group-hover:scale-125 group-hover:text-cyan-100 group-hover:drop-shadow-[0_0_18px_rgba(34,211,238,.9)]"
+        size={36}
+      />
+      <h3 className="text-xl font-black transition-colors duration-300 group-hover:text-cyan-100">
+        {title}
+      </h3>
+      <p className="mt-3 leading-7 text-slate-300 transition-colors duration-300 group-hover:text-slate-100">
+        {desc}
+      </p>
     </div>
   )
 }
-
 function App() {
   return (
     <div className="min-h-screen overflow-hidden bg-slate-950/30 text-white">
@@ -147,7 +174,10 @@ function App() {
               從集貨入倉、合併出貨、報關清關到台灣派送，協助您規劃更合適的物流方案。
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href={company.line}>立即 LINE 詢價 <ArrowRight size={18}/></Button>
+              <Button href="https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform">
+  立即詢價
+  <ArrowRight size={18}/>
+</Button>
               <Button href="#shopping" variant="secondary">查看集運流程</Button>
               <Button href={`tel:${company.phone}`} variant="secondary"><Phone size={18}/> {company.phone}</Button>
             </div>
@@ -179,7 +209,7 @@ function App() {
       </section>
 
       <section id="shopping" className="bg-white/[.03] py-20">
-        <div className="mx-auto max-w-full px-5">
+        <div className="mx-auto max-w-7xl px-5">
           <SectionTitle eyebrow="SHOPPING CONSOLIDATION" title="淘寶／拼多多／阿里巴巴／1688 網購集運回台" desc="多平台商品可先寄至中國集貨倉，確認到貨後再合併安排回台，適合個人網購、批發採購、樣品測試與小量出貨。" />
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {shoppingItems.map(([title, desc]) => (
