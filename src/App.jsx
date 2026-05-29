@@ -130,7 +130,7 @@ function App() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
-        <div className="absolute inset-0 bg-grid-soft opacity-60" />
+        <div className="absolute inset-0 bg-grid-soft" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_.92fr]">
           <div>
             <div className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100 backdrop-blur">
@@ -237,7 +237,7 @@ function App() {
       </section>
 
       <section className="relative py-20">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20" style={{ backgroundImage: "url('/global-logistics.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center opacity-60" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2">
           <div>
