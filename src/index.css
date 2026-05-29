@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #020617; color: white; }
+body {
+  margin: 0;
+  color: white;
+  background-image: url('/global-logistics.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 * { box-sizing: border-box; }
 ::selection { background: rgba(34, 211, 238, .35); }
 .bg-grid-soft {
