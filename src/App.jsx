@@ -354,7 +354,7 @@ function App() {
         <p className="mt-2">中國貨回台｜淘寶集運｜拼多多集運｜1688集運｜小三通物流｜茶葉小三通｜東南亞物流｜全球物流｜倉儲服務</p>
       </footer>
 
-      <a href={company.line} target="_blank" rel="noreferrer" className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-4 text-sm font-black text-slate-950 shadow-glow">
+      <a href={company.line} target="_blank" rel="noreferrer" className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#06C755] px-5 py-4 text-sm font-black text-slate-950 shadow-glow">
         <MessageCircle size={18}/> LINE 詢價
       </a>
     </div>
