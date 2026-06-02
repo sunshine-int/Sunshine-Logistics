@@ -136,7 +136,15 @@ function Card({ title, desc, Icon }) {
 }
 function App() {
   return (
-    <div className="min-h-screen overflow-hidden bg-slate-950/30 text-white">
+    <div
+  className="min-h-screen overflow-hidden text-white"
+  style={{
+    backgroundImage: "url('/global-logistics.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+  }}
+>  
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/30 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
           <a href="#home" className="flex items-center gap-3">
