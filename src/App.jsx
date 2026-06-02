@@ -156,7 +156,7 @@ function App() {
 
       <section
   id="home"
-  className="relative min-h-[100svh] overflow-hidden pt-28 pb-40 md:pt-36 md:pb-24"
+  className="relative min-h-[110svh] overflow-hidden pt-24 pb-40"
 >
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
