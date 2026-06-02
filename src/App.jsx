@@ -154,7 +154,10 @@ function App() {
         </div>
       </header>
 
-      <section id="home" className="relative min-h-screen pt-28">
+      <section
+  id="home"
+  className="relative min-h-[100svh] overflow-hidden pt-28 pb-40 md:pt-36 md:pb-24"
+>
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
@@ -179,7 +182,7 @@ function App() {
             <p className="mt-3 max-w-2xl leading-8 text-slate-300">
               從集貨入倉、合併出貨、報關清關到台灣派送，協助您規劃更合適的物流方案。
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Button href="#quote">
                 立即詢價 <ArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1"/>
               </Button>
