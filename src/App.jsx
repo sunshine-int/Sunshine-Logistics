@@ -153,7 +153,7 @@ function App() {
         </div>
       </header>
 
-      <section id="home" className="relative min-h-[100svh] pt-28 pb-40 md:pb-24">
+      <section id="home" className="relative min-h-auto pt-24 pb-16 h-screen md:pt-28">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
