@@ -170,8 +170,8 @@ function App() {
 
       <section id="home" className="relative pt-32 pb-28 md:min-h-screen md:pt-40 md:pb-24">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
-        <div className="absolute inset-0 bg-slate-950/30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
+        <div className="absolute inset-0 bg-slate-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-slate-950/45 to-slate-950/90" />
         <div className="absolute inset-0 bg-grid-soft" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_.92fr]">
           <div>
