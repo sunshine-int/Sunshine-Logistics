@@ -149,7 +149,15 @@ function App() {
           <nav className="hidden items-center gap-5 text-sm text-slate-300 lg:flex">
             {nav.map(([label, href]) => <a key={label} href={href} className="hover:text-cyan-300">{label}</a>)}
           </nav>
-          <Button href={company.line} className="hidden sm:inline-flex bg-[#06C755] text-white hover:bg-[#05b84d]"><MessageCircle size={18}/> LINE 詢價</Button>
+          <a
+  href={company.line}
+  target="_blank"
+  rel="noreferrer"
+  className="hidden sm:inline-flex items-center gap-2 rounded-full bg-[#06C755] px-6 py-3 text-sm font-black text-white transition-all duration-300 hover:bg-[#05b84d] hover:scale-105"
+>
+  <MessageCircle size={18} />
+  LINE 詢價
+</a>
         </div>
       </header>
 
