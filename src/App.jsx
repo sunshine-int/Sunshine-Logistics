@@ -180,21 +180,7 @@ function App() {
 
               <Button href="#process" variant="secondary" className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
                 查看集運流程 <ArrowRight size={22}/>
-              </Button>
-
-              <Button href={company.line} className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
-                <span className="inline-flex items-center gap-2">
-                  <MessageCircle size={22}/> LINE 詢價
-                </span>
-                <ArrowRight size={22}/>
-              </Button>
-
-              <Button href={`tel:${company.phone}`} variant="secondary" className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
-                <span className="inline-flex items-center gap-2">
-                  <Phone size={22}/> 04-22529955
-                </span>
-                <ArrowRight size={22}/>
-              </Button>
+              </Button>            
             </div>
           </div>
           <div className="rounded-[2rem] border border-white/10 bg-white/10 p-5 shadow-card backdrop-blur-xl">
