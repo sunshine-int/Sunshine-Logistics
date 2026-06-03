@@ -148,9 +148,9 @@ function App() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3">
           <a href="#home" className="flex items-center gap-3">
-            <img src="/logo.png" alt="尚順國際運通" className="h-11 w-auto rounded-md bg-white/95 p-1" />
+            <img src="/logo.png" alt="尚順國際運通有限公司" className="h-11 w-auto rounded-md bg-white/95 p-1" />
             <div>
-              <p className="text-sm font-black tracking-widest">尚順國際運通</p>
+              <p className="text-sm font-black tracking-widest">尚順國際運通有限公司</p>
               <p className="text-xs text-cyan-200">Sunshine International Logistics</p>
             </div>
           </a>
@@ -190,18 +190,11 @@ function App() {
             </p>
             <div className="mt-8 flex flex-col gap-4 pb-[120px] sm:flex-row sm:flex-wrap md:pb-0">
               <Button href="#quote" className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
-                立即詢價 <ArrowRight size={22}/>
+                立即線上詢價 <ArrowRight size={22}/>
               </Button>
 
               <Button href="#process" variant="secondary" className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
                 查看集運流程 <ArrowRight size={22}/>
-              </Button>
-
-              <Button href={company.line} className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
-                <span className="inline-flex items-center gap-2">
-                  <MessageCircle size={22}/> LINE 詢價
-                </span>
-                <ArrowRight size={22}/>
               </Button>
 
               <Button href={`tel:${company.phone}`} variant="secondary" className="w-full justify-between rounded-[28px] px-8 py-5 text-lg sm:w-auto">
