@@ -163,7 +163,7 @@ function App() {
             <div className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100 backdrop-blur">
               <Globe2 size={17}/> 中國貨回台｜淘寶集運｜拼多多集運｜1688集運
             </div>
-            <h1 className="text-4xl md:text-6xl font-black leading-[1.05]">
+            <h1 className="text-2xl md:text-5xl font-black leading-tight">
               專業中國台灣進出口物流<br />
               <span className="bg-gradient-to-r from-cyan-200 via-white to-blue-300 bg-clip-text text-transparent">網購集運服務</span>
             </h1>
