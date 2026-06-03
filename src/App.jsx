@@ -18,7 +18,7 @@ import {
 } from 'lucide-react'
 
 const company = {
-  name: '尚順國際運通',
+  name: '尚順國際運通有限公司',
   phone: '04-22529955',
   email: 'sunshine0422520071@gmail.com',
   address: '台中市西屯區龍洋巷17之7號',
