@@ -190,26 +190,13 @@ function App() {
             </p>
             <div className="mt-8 flex flex-col gap-4 pb-[120px] sm:flex-row sm:flex-wrap md:pb-0">
               <Button href="#quote" className="w-full justify-between rounded-[28px] px-7 py-4 text-base sm:w-auto">
-                立即詢價 <ArrowRight size={22}/>
+                線上詢價 <ArrowRight size={22}/>
               </Button>
 
               <Button href="#process" variant="secondary" className="w-full justify-between rounded-[28px] px-7 py-4 text-base sm:w-auto">
                 查看集運流程 <ArrowRight size={22}/>
               </Button>
 
-              <Button href={company.line} className="w-full justify-between rounded-[28px] px-7 py-4 text-base sm:w-auto">
-                <span className="inline-flex items-center gap-2">
-                  <MessageCircle size={22}/> LINE 詢價
-                </span>
-                <ArrowRight size={22}/>
-              </Button>
-
-              <Button href={`tel:${company.phone}`} variant="secondary" className="w-full justify-between rounded-[28px] px-7 py-4 text-base sm:w-auto">
-                <span className="inline-flex items-center gap-2">
-                  <Phone size={22}/> 04-22529955
-                </span>
-                <ArrowRight size={22}/>
-              </Button>
             </div>
           </div>
           <div className="rounded-[2rem] border border-cyan-300/25 bg-white/[0.08] p-5 shadow-card backdrop-blur-xl">
