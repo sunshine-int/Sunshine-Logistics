@@ -18,14 +18,14 @@ import {
 } from 'lucide-react'
 
 const company = {
-  name: '尚順國際運通',
+  name: '尚順國際運通有限公司',
   phone: '04-22529955',
   email: 'sunshine0422520071@gmail.com',
   address: '台中市西屯區龍洋巷17之7號',
   line: 'https://lin.ee/Dlq7FY2',
   fb: 'https://www.facebook.com/profile.php?id=61590203879333',
   map: 'https://maps.google.com/?q=台中市西屯區龍洋巷17之7號',
-  mapEmbed: 'https://www.google.com/maps?q=台中市西屯區龍洋巷17之7號&output=embed',
+  mapEmbed: 'https://www.google.com/maps?q=尚順國際運通&output=embed',
   formEmbed: 'https://docs.google.com/forms/d/e/1FAIpQLScDq36dwppmix3Y2QOqR7JdtzAE9u4e-cvhiD3Nkg2LvkGzsw/viewform?embedded=true',
 }
 
@@ -348,7 +348,7 @@ function App() {
       </section>
 
       <section id="contact" className="bg-white py-24 text-slate-900"><div className="mx-auto max-w-7xl px-5">
-        <SectionTitle eyebrow="CONTACT" title="聯絡尚順國際運通" />
+        <SectionTitle eyebrow="CONTACT" title="聯絡尚順國際運通有限公司" />
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="space-y-4 leading-8 text-slate-700">
@@ -371,7 +371,7 @@ function App() {
 
       <footer className="border-t border-white/10 bg-slate-950 px-5 py-10 text-center text-sm text-slate-400">
         <img src="/logo.png" alt="尚順國際運通" className="mx-auto mb-4 h-12 rounded-md bg-white p-1" />
-        <p className="font-bold text-white">尚順國際運通｜中國貨回台・網購集運回台・國際物流服務</p>
+        <p className="font-bold text-white">尚順國際運通有限公司｜中國貨回台・網購集運回台・國際物流服務</p>
         <p className="mt-2">中國貨回台｜淘寶集運｜拼多多集運｜1688集運｜小三通物流｜茶葉小三通｜東南亞物流｜全球物流｜倉儲服務</p>
       </footer>
     </div>
