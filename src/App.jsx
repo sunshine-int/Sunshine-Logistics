@@ -154,9 +154,17 @@ function App() {
               </p>
             </div>
           </a>
-          <nav className="hidden items-center gap-5 text-sm text-slate-300 lg:flex">
-            {nav.map(([label, href]) => <a key={label} href={href} className="hover:text-cyan-300">{label}</a>)}
-          </nav>
+          <nav className="hidden items-center gap-8 text-lg font-semibold text-slate-300 lg:flex">
+  {nav.map(([label, href]) => (
+    <a
+      key={label}
+      href={href}
+      className="transition-all duration-300 hover:text-cyan-300 hover:scale-105"
+    >
+      {label}
+    </a>
+  ))}
+</nav>
           <a
             href={company.line}
             target="_blank"
