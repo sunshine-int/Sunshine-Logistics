@@ -159,11 +159,11 @@ function App() {
             </div>
           </a>
 <button
-  onClick={() => setMobileMenu(!mobileMenu)}
-  className="ml-auto rounded-xl border border-cyan-300/30 bg-cyan-300/10 p-3 text-cyan-300 lg:hidden"
->
-  ☰
-</button>
+        onClick={() => setMobileMenu(!mobileMenu)}
+        className="ml-auto rounded-xl border border-cyan-300/30 bg-cyan-300/10 p-3 text-cyan-300 lg:hidden"
+      >
+        ☰
+      </button>
           <nav className="hidden items-center gap-6 text-base font-semibold text-slate-300 lg:flex">
   {nav.map(([label, href]) => (
     <a
@@ -179,13 +179,27 @@ function App() {
             href={company.line}
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-[#06C755] px-6 py-3 text-sm font-black text-white transition-all duration-300 hover:scale-105 hover:bg-[#05b84d] sm:inline-flex"
+            className="hidden items-center gap-2 rounded-full bg-[#06C755] px-6 py-3 text-sm font-black text-white transition-all duration-300 hover:scale-105 hover:bg-[#05b84d] lg:inline-flex"
           >
             <MessageCircle size={18}/> LINE 詢價
           </a>
         </div>
+{mobileMenu && (
+  <div className="absolute left-0 right-0 top-full z-50 bg-slate-950/95 backdrop-blur-xl lg:hidden">
+    {nav.map(([label, href]) => (
+      <a
+        key={label}
+        href={href}
+        onClick={() => setMobileMenu(false)}
+        className="block border-b border-white/10 px-6 py-4 text-lg font-bold text-white"
+      >
+        {label}
+      </a>
+    ))}
+  </div>
+)}  
       </header>
-      <section id="home" className="relative pt-24 pb-16 md:min-h-screen md:pt-32 md:pb-24">
+      <section id="home" className="relative pt-36 pb-16 md:min-h-screen md:pt-32 md:pb-24">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
