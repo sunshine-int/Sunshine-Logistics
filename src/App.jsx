@@ -213,7 +213,7 @@ function App() {
 </Button>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="hidden lg:flex items-center justify-center">
             <img
               src="/about-logistics.png"
               alt="尚順國際運通物流服務形象圖"
