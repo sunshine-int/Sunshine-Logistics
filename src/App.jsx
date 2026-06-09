@@ -217,7 +217,7 @@ function App() {
             <img
               src="/about-logistics.png"
               alt="尚順國際運通物流服務形象圖"
-              className="w-full max-w-[650px] rounded-[2rem] border border-cyan-300/20 shadow-[0_20px_60px_rgba(0,180,255,.25)]"
+              className="w-full max-w-[850px] rounded-[2rem] border border-cyan-300/20 shadow-[0_20px_60px_rgba(0,180,255,.25)]"
             />
           </div>
         </div>
