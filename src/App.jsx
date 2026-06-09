@@ -299,7 +299,16 @@ function App() {
       <section className="relative bg-gradient-to-br from-blue-900 via-cyan-900 to-sky-800 py-20 text-white md:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2">
           <div>
-            <SectionTitle eyebrow="WHY US" title="為什麼選擇尚順國際運通有限公司" desc="專人協助確認貨況、資料與清關需求，讓客戶更安心掌握每一步。" />
+            <SectionTitle
+  eyebrow="WHY US"
+  title={
+    <>
+      為什麼選擇
+      <br />
+      尚順國際運通
+    </>
+  } 
+  desc="專人協助確認貨況、資料與清關需求，讓客戶更安心掌握每一步。" />
             <div className="grid gap-3 sm:grid-cols-2">
               {reasons.map(item => <div key={item} className="flex items-center gap-3 rounded-2xl border border-cyan-300/20 bg-white/10 p-4 text-white shadow-card backdrop-blur-md"><CheckCircle2 className="text-cyan-300" size={20}/>{item}</div>)}
             </div>
