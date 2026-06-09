@@ -176,7 +176,19 @@ function App() {
           </a>
         </div>
       </header>
-
+<div className="fixed top-[76px] left-0 right-0 z-40 border-b border-white/10 bg-slate-950/90 px-3 py-3 backdrop-blur-xl lg:hidden">
+  <div className="flex gap-3 overflow-x-auto whitespace-nowrap text-sm font-bold text-white">
+    {nav.map(([label, href]) => (
+      <a
+        key={label}
+        href={href}
+        className="rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-cyan-100"
+      >
+        {label}
+      </a>
+    ))}
+  </div>
+</div>
       <section id="home" className="relative pt-24 pb-16 md:min-h-screen md:pt-32 md:pb-24">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
