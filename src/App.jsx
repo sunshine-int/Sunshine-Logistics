@@ -203,7 +203,6 @@ function App() {
 
                <Button
     href="#about"  
-    variant="secondary"
     className="w-full justify-center rounded-[28px] px-10 py-6 text-2xl font-black sm:w-auto"
   >
     關於尚順
