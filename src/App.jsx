@@ -146,7 +146,7 @@ function App() {
               className="h-12 w-auto rounded-lg bg-white/95 p-1.5 shadow-lg sm:h-14 md:h-16"
             />
             <div>
-              <p className="text-sm font-black leading-tight tracking-wide text-white sm:text-base md:text-3xl">
+              <p className="text-sm font-black leading-tight tracking-wide text-white sm:text-base md:text-2xl">
                 尚順國際運通有限公司
               </p>
               <p className="text-[10px] font-medium text-cyan-300 sm:text-xs md:text-base">
