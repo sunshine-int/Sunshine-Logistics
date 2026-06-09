@@ -177,16 +177,19 @@ function App() {
         </div>
       </header>
 
-      <section id="home" className="relative pt-24 pb-32 md:min-h-screen md:pt-32 md:pb-24">
+      <section id="home" className="relative pt-24 pb-16 md:min-h-screen md:pt-32 md:pb-24">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/global-logistics.png')" }} />
         <div className="absolute inset-0 bg-slate-950/30" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/70 to-slate-950" />
         <div className="absolute inset-0 bg-grid-soft" />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.08fr_.92fr]">
           <div>
-            <div className="mb-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-bold text-cyan-100 backdrop-blur">
-              <Globe2 size={17}/> 中國貨回台｜淘寶集運｜拼多多集運｜1688集運
-            </div>
+            <div className="mb-6 inline-flex items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-xs sm:text-sm font-bold text-cyan-100 backdrop-blur">
+  <Globe2 size={15} className="mr-2 shrink-0" />
+  <span className="whitespace-nowrap">
+    中國貨回台｜網購集運｜倉儲服務
+  </span>
+</div>
             <h1 className="text-3xl font-black leading-tight md:text-5xl">
               專業中國台灣進出口物流<br />
               <span className="bg-gradient-to-r from-cyan-200 via-white to-blue-300 bg-clip-text text-transparent">網購集運服務</span>
@@ -197,7 +200,7 @@ function App() {
             <p className="mt-3 max-w-2xl leading-8 text-cyan-50/80">
               從集貨入倉、合併出貨、報關清關到台灣派送，協助您規劃更合適的物流方案。
             </p>
-            <div className="mt-8 flex flex-col gap-4 pb-[120px] sm:flex-row sm:flex-wrap md:pb-0">
+            <div className="mt-8 flex flex-col gap-4 pb-8 sm:flex-row sm:flex-wrap">
             <Button
   href="#quote"
   className="min-w-[260px] justify-center rounded-[32px] px-16 py-7 text-4xl font-black"
