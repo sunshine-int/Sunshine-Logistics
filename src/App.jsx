@@ -197,16 +197,19 @@ function App() {
               從集貨入倉、合併出貨、報關清關到台灣派送，協助您規劃更合適的物流方案。
             </p>
             <div className="mt-8 flex flex-col gap-4 pb-[120px] sm:flex-row sm:flex-wrap md:pb-0">
-             <Button href="#quote" className="w-full justify-between rounded-[28px] px-10 py-5 text-2xl font-black sm:w-auto">
-                線上詢價 
-              </Button>
+            <Button
+  href="#quote"
+  className="w-full justify-center rounded-[28px] px-10 py-6 text-2xl font-black sm:w-auto"
+>
+  線上詢價
+</Button>
 
-               <Button
-    href="#about"  
-    className="w-full justify-center rounded-[28px] px-10 py-6 text-2xl font-black sm:w-auto"
-  >
-    關於尚順
-    </Button>
+<Button
+  href="#about"
+  className="w-full justify-center rounded-[28px] px-10 py-6 text-2xl font-black sm:w-auto"
+>
+  關於尚順
+</Button>
             </div>
           </div>
           <div className="rounded-[2rem] border border-slate-200 bg-white/10 p-5 shadow-card backdrop-blur-xl">
