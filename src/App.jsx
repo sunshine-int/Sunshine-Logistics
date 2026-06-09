@@ -200,14 +200,14 @@ function App() {
             <div className="mt-8 flex flex-col gap-4 pb-[120px] sm:flex-row sm:flex-wrap md:pb-0">
             <Button
   href="#quote"
-  className="min-w-[260px] justify-center rounded-[32px] px-16 py-7 text-3xl font-black"
+  className="min-w-[260px] justify-center rounded-[32px] px-16 py-7 text-4xl font-black"
 >
   線上詢價
 </Button>
 
 <Button
   href="#about"
-  className="min-w-[260px] justify-center rounded-[32px] px-16 py-7 text-3xl font-black"
+  className="min-w-[260px] justify-center rounded-[32px] px-16 py-7 text-4xl font-black"
 >
   關於尚順
 </Button>
