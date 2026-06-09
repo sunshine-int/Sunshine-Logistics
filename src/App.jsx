@@ -146,20 +146,21 @@ function App() {
               className="h-12 w-auto rounded-lg bg-white/95 p-1.5 shadow-lg sm:h-14 md:h-16"
             />
             <div>
-              <p className="text-sm font-black leading-tight tracking-wide text-white sm:text-base md:text-2xl">
-                尚順國際運通有限公司
-              </p>
-              <p className="text-[10px] font-medium text-cyan-300 sm:text-xs md:text-base">
-                Sunshine International Logistics Co., Ltd.
-              </p>
+             <p className="text-sm font-black leading-tight tracking-wide text-white sm:text-lg md:text-xl">
+  尚順國際運通有限公司
+</p>
+
+<p className="text-[10px] font-medium text-cyan-300 sm:text-xs md:text-sm">
+  Sunshine International Logistics Co., Ltd.
+</p>
             </div>
           </a>
-          <nav className="hidden items-center gap-8 text-lg font-semibold text-slate-300 lg:flex">
+         <nav className="hidden items-center gap-6 text-base font-semibold text-slate-300 lg:flex">
   {nav.map(([label, href]) => (
     <a
       key={label}
       href={href}
-      className="transition-all duration-300 hover:text-cyan-300 hover:scale-105"
+      className="whitespace-nowrap transition-all duration-300 hover:text-cyan-300 hover:scale-105"
     >
       {label}
     </a>
