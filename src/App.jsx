@@ -210,7 +210,7 @@ function App() {
             <div className="mb-6 inline-flex items-center rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-xs sm:text-sm font-bold text-cyan-100 backdrop-blur">
   <Globe2 size={15} className="mr-2 shrink-0" />
   <span className="whitespace-nowrap">
-    中國貨回台｜網購集運｜倉儲服務
+    中國貨回台｜網購集運｜兩岸小三通｜茶葉小三通｜特貨派送｜倉儲服務
   </span>
 </div>
             <h1 className="text-3xl font-black leading-tight md:text-5xl">
